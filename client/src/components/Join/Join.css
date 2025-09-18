@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+
+html,
+body {
+  font-family: "Inter", sans-serif;
+  padding: 0;
+  margin: 0;
+  background: linear-gradient(135deg, #1e40af 0%, #3730a3 50%, #5b21b6 100%);
+  min-height: 100vh;
+}
+
+#root {
+  height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.joinOuterContainer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  align-items: center;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.joinInnerContainer {
+  width: 25%;
+  min-width: 420px;
+  background: rgba(255, 255, 255, 0.98);
+  border-radius: 24px;
+  padding: 50px 40px;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.15),
+    0 0 0 1px rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(20px);
+  position: relative;
+  z-index: 1;
+  transition: transform 0.3s ease;
+}
+
+.joinInnerContainer:hover {
+  transform: translateY(-5px);
+}
+
+.joinInput {
+  border-radius: 16px;
+  padding: 18px 24px;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 400;
+  border: 2px solid #e8ecf4;
+  background: #ffffff;
+  color: #2d3748;
+  margin-bottom: 24px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
+  font-family: "Inter", sans-serif;
+}
+
+.joinInput::placeholder {
+  color: #9ca3af;
+  font-weight: 400;
+}
+
+.joinInput:focus {
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.12);
+  transform: translateY(-2px);
+  background: #ffffff;
+}
+
+.heading {
+  color: #1a202c;
+  font-size: 2.8em;
+  font-weight: 700;
+  margin-bottom: 12px;
+  background: linear-gradient(135deg, #1e40af, #5b21b6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: -0.02em;
+}
+
+.subheading {
+  color: #64748b;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 40px;
+  line-height: 1.5;
+}
+
+.button {
+  color: #fff;
+  text-transform: none;
+  text-decoration: none;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 18px 32px;
+  border-radius: 16px;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.025em;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 8px 24px rgba(102, 126, 234, 0.35);
+  width: 100%;
+  font-family: "Inter", sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+.button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 32px rgba(102, 126, 234, 0.4);
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.footerText {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.footerText p {
+  color: #64748b;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  margin: 0;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .joinOuterContainer {
+    height: 100%;
+  }
+
+  .joinInnerContainer {
+    width: 90%;
+  }
+}
+
+button:focus {
+  outline: 0;
+}
